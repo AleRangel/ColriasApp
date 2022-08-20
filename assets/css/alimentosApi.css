@@ -1,0 +1,61 @@
+.form_buscar{    
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+#FORM button{
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    background: #6a69c0;
+    border: #6a69c0;
+    color: #fff;
+    --bs-btn-focus-shadow-rgb: 0;
+}#FORM button:hover{
+    background: #eee;
+    color: #6a69c0;
+}
+#FORM button:focus{
+    color: #eee;
+    background: #6a69c0;
+    box-shadow: 0 0 10px ;
+}
+#FORMalimentos label, input{
+    font-size: 1.2rem;
+    margin: 0 auto;
+    height: 25px;
+    width: 25px;    
+    display: block;
+    color: rgb(255, 255, 255);
+}
+#FORM{
+    padding-top: 5vh;
+    
+}
+#FORM h6{
+    text-align: center;
+}
+@media(max-width:425px){
+    #FORM input{
+        margin-left: 30px;
+        width: 94%;
+    }
+    #FORM button{
+        margin-left: 32px;
+        width: 40%;
+    }
+}
+@media(max-width:362px){
+    #FORM input{
+        /* margin-left: 100px; */
+        width: 92%;
+    }
+    #FORM button{
+        /* margin-left: 100px; */
+        width: 30%;
+    }
+}

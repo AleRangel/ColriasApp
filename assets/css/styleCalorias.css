@@ -1,0 +1,72 @@
+.ingreso_datos .container{
+    
+    margin: 0 auto;
+
+}
+
+.ingreso_datos form{
+    padding-top: 50px;
+    margin: 0 auto;
+    width: 85%;
+}
+
+.table{
+    margin: 0 auto;
+    margin-left: 10px;
+    width: 100%;
+}
+
+
+.tabla_datosMobile{
+    display: none;
+}
+#divider{
+    --bs-table-accent-bg:#6a69c0 ;
+}
+
+
+
+.ingreso_datos input{
+    display: block;
+    
+    width: 80%;
+}
+.ingreso_datos button{
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: block;
+    
+    background: #6a69c0;
+    border: #6a69c0;
+    color: #fff;
+    --bs-btn-focus-shadow-rgb: 0;
+}.ingreso_datos button:hover{
+    background: #eee;
+    color: #6a69c0;
+}
+.ingreso_datos button:focus{
+    color: #eee;
+    background: #6a69c0;
+    box-shadow: 0 0 10px ;
+}
+
+
+@media(max-width:576px) {
+    
+    .tabla_datos{
+        display: none;
+    }
+    .tabla_datosMobile{
+        width: 92%;
+        display: block;
+    }
+    .tabla_datosMobile{
+        margin-left: 25px;
+    }
+    .ingreso_datos{
+        width: 92%;
+        margin-left: 25px;
+    }
+}
+ 

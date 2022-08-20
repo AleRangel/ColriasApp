@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mis calorías</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/styleCalorias.css">
+    
+  </head>
+  <body>
+    
+    <section class="sidebar">
+        
+        <ul class="lista_navbar">              
+            <li><a href="calculadoraCalorias.html"><i class="bi bi-calculator iconActivo"></i> <span class="pagina_activa">Calculadora</span> </a></li>
+            <li><a href="alimentosApi.html"><i class="bi bi-card-text"></i> <span class="">Alimentos</span> </a></li>
+          <li><a href="login.html"><i class="bi bi-person-circle"></i> <span class="">Usuario</span> </a></li>
+          <li class="exit"><a href="login.html"><i class="bi bi-box-arrow-left"></i> <span class="">Salir</span></a></li>              
+        </ul>
+        
+    </section>
+
+    <section class="ingreso_datos">
+        <div class="container">
+            <form action="" id="formulario">
+                <h3>Ingresa tus calorías</h3>
+                <div class="row row-cols-sm-4 row-cols-2">
+                    <div class="col">
+                        <label for="comida">Comida</label>
+                        <input type="text" placeholder="Nombre de comida" name="alimento">
+
+                    </div>
+                    <div class="col">
+                        <label for="porción">Porción</label>
+                        <input type="number" placeholder="porción en gr." name="gramos">
+
+                    </div>
+                    <div class="col">
+                        <label for="proteinas">Proteínas</label>
+                        <input type="number" placeholder="porción en gr." name="proteinas">
+                        
+                    </div>
+                    <div class="col">
+
+                        <label for="calorias">Calorías</label>
+                        <input type="number" placeholder="Kcal" name="calorias">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn igresar-calorias">Guardar</button>
+                
+
+
+            </form>
+        </div>
+    </section>
+
+    
+    <section class="tabla_datos">
+        <div class="container">
+
+            <table class="table table-dark table-striped-columns">
+                
+                <thead>
+                    <tr>
+                        <th>
+                            Comida
+                        </th>
+                        <th>
+                            Porción gr
+                        </th>
+                        <th>
+                            Proteínas
+                        </th>
+                        <th>
+                            Calorías
+                        </th>
+                        <th>
+
+                        </th>                        
+                    </tr>
+                </thead>
+                
+                <tbody id="tabla_datos">
+                    
+                    
+                </tbody>
+                <TFoot id="tabla_datos_total">
+                    <th colspan="4" class="text-center">Total</th>
+                    
+                    <tr>
+                        <td>
+                            ..
+                        </td>
+                        <td>
+                            ...
+                        </td>
+                        <td>
+                            ...
+                        </td>
+                        <td>
+                            ...
+                        </td>
+                    </tr>
+                </TFoot>
+            </table>
+        </div>
+
+    </section>
+
+    <section class="tabla_datosMobile">
+        <div class="container">
+            
+            <table class="table table-dark table-striped">   
+                <thead>
+                    <th colspan="">
+                        Datos
+                    </th>
+                    <th colspan="">
+                        Mis datos
+                    </th>
+                    <th></th>
+                </thead>
+                <tbody id="tabla_datos_mobile">
+                    
+                </tbody>
+                
+                
+                <!-- Division aquí se inserta la otra tabla -->
+                <!-- Division -->
+                
+                <th class="text-center" colspan="5" id="divider" >Total</th>
+                <tFoot id="tabla_datos_total_mobile"> 
+                
+                </tFoot>
+            </table>
+        </div>
+    </section>
+
+
+    <script src="assets/js/calculadoraAlimentos.js"></script> 
+    <script src="assets/js/ingresarDatosManual.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

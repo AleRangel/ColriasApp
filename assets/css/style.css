@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,400;0,600;1,700&display=swap');
+/* 
+font-family: 'Poppins', sans-serif;
+font-family: 'Source Code Pro', monospace;
+*/
+
+
+
+*{
+    color: #6a69c0;
+}
+body{
+    background: #333333 !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 1em !important;
+    width: 100%;
+    height: 100vh;
+    
+         
+}
+
+li{
+    list-style: none;
+}
+li, a, i, span{
+    line-height: 36px;
+    height: 32.5px;
+    padding: 0;
+    border-radius: 5px;
+    color: #6a69c0;
+}
+a{
+    text-decoration: none !important;
+    padding: 0;
+    margin: 0;
+    color: #b4b3ee !important;    
+    
+
+}
+
+/* colapsar navbar */
+a span{
+    opacity: 0;
+    padding: 9px;    
+    display: inline-block;
+    transform: translateX(-160px);   
+    transition: all .3s;         
+}
+
+.sidebar{
+      
+    height: 100vh;
+    display: inline-block;
+    position: fixed;
+    width: 40px;
+}.sidebar:hover  span{
+    line-height: 15px;
+    display: inline-block;
+    opacity: 1;
+    transform: translateX(50px);
+    transition-delay: .5s;
+    transition: all ease .1s;
+    
+
+}.sidebar:hover .lista_navbar{
+    transform: translateX(0px);
+    
+}.sidebar:hover .lista_navbar i{
+    
+    left: 5px;
+    transition: all ease-in-out .3s;
+    
+}
+
+
+.lista_navbar i{
+    font-size: 30px;    
+    padding-right: 5px;
+    position: fixed;
+    left: 139px;   
+    transition: all ease-in-out .3s;
+} 
+.lista_navbar li:hover i{
+    
+    padding: 0;
+    border-radius: 5px;
+    color: #fff;
+    background-color: mediumpurple;
+}
+.lista_navbar{
+    position: fixed;
+    background: #eee;
+    width: 175px;
+    display: flex;
+    flex-direction: column;    
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    transform: translateX(-135px);
+    transition: all ease-in-out .3s; 
+}
+.lista_navbar li{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}.lista_navbar li:hover span:hover{
+    border-radius: 10px;
+    background: mediumpurple;
+    color: #fff;
+       
+}
+.lista_navbar .iconActivo{
+    line-height: 36px;
+    height: 32.5px;
+    padding: 0;
+    border-radius: 5px;
+    color: #fff;
+    background-color: mediumpurple;
+}
+.pagina_activa{
+    border-radius: 10px;
+    background: mediumpurple;
+    color: #fff;
+}
+
+.exit{
+    position: absolute;
+    bottom: 10px;
+    /* height: 100vh */;
+}
+
+/* Formulario Login*/
+#FORM{
+    padding-top: 38vh;
+    
+}
+#FORM input{    
+    margin: 0 auto;
+    height: 30px;
+    width: 300px;
+    margin-bottom: 10px;
+    display: block;
+}
+#FORM button{
+    margin: 0 auto;
+    display: block;
+    width: 300px;
+    background: #6a69c0;
+    border: #6a69c0;
+    color: #fff;
+    --bs-btn-focus-shadow-rgb: 0;
+}
+#FORM button:hover{
+    background: #eee;
+    color: #6a69c0;
+}
+#FORM button:focus{
+    box-shadow: 0 0 10px ;
+}
+.login h6{
+    text-align: center;
+}
+.login .registro_titulo{
+    font-size: 12px;
+}
+.login .registro_link{
+    color: #eee ;
+    font-size: 11px;
+    text-decoration: underline;
+}
+.login .registro_link:hover{
+    cursor: pointer;
+    color: #6a69c0;
+}
+
