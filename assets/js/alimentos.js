@@ -17,7 +17,8 @@ form.addEventListener('submit', (e) => {
         window.location.reload();
     })
 
-    fetchAlimentos();     
+    fetchAlimentos();
+
 
     function fetchAlimentos () {
         
@@ -29,14 +30,16 @@ form.addEventListener('submit', (e) => {
             console.log(formulario.alimento);
             
             const alimento = formulario.alimento;
-            
-            return fetch (`http://localhost:8080/${alimento}`,{
+            const token = localStorage.getItem("token");
+
+            return fetch (`http://localhost:8080/api/buscar/${alimento}`,{
                 headers:{
                     'Content-Type': 'application/json',
+                    /* 'Authorization': 'Bearer ' + token, */
                 }
             }).then(resp => resp.json()).then(datos => {
 
-                formatearDatos(datos, formulario.alimento, formulario.gramos);
+                /* formatearDatos(datos, formulario.alimento, formulario.gramos); */
                 const data = formatearDatos(datos, formulario.alimento, formulario.gramos);
                 return data
             });  
@@ -105,7 +108,7 @@ function mostrarDatos(datosAlimentos) {
     form[4].value = datosAlimentos.carbohidratos;
     form[5].value = datosAlimentos.proteinas;
     
-    console.log(form);
+    /* console.log(form); */
     
 }
 
